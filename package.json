@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build && echo inndeso.com.mx > out/CNAME && touch out/.nojekyll && gh-pages -d out -b gh-pages"
+    "deploy": "next build && echo superenvasesenteK.com.mx > out/CNAME && touch out/.nojekyll && gh-pages -d out -b gh-pages"
   },
   "dependencies": {
     "next": "16.1.1",
