@@ -1,7 +1,7 @@
 // Componente cliente para mostrar el grid de productos con modal de imagen.
 "use client";
 
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { useState } from "react";
 
 type Producto = {
