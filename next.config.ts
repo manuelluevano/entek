@@ -1,7 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export',          // genera /out estático
-  trailingSlash: true,       // evita 404 en GitHub Pages
-  images: { unoptimized: true } // desactiva Image Optimization del server
+const isProd = process.env.NODE_ENV === "production";
+export default {
+  output: "export",
+  basePath: isProd ? "/entek" : "",
+  assetPrefix: isProd ? "/entek" : "",
+  trailingSlash: true,
+  images: { unoptimized: true },
 };
-module.exports = nextConfig;
