@@ -11,8 +11,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const isProd = process.env.NODE_ENV === "production";
+  const baseHref = isProd ? "https://manuelluevano.github.io/entek/" : "/";
+
   return (
     <html lang="en">
+      <head>
+        <base href={baseHref} />
+      </head>
       <body className="antialiased">{children}</body>
     </html>
   );
