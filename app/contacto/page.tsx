@@ -2,6 +2,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { NavBar } from "../components/NavBar";
+import logoNoFondo from "../assets/logoNoFondo.png";
 
 export const metadata: Metadata = {
   title: "Contacto | EnteK",
@@ -18,7 +19,7 @@ export default function Contacto() {
   return (
     <div className="min-h-screen bg-white text-slate-800">
       <NavBar
-        logoSrc="/logoNoFondo.png"
+        logoSrc={logoNoFondo.src}
         navItems={[
           { label: "INICIO", href: "/" },
           { label: "PRODUCTOS", href: "/#productos" },

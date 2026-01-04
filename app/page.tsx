@@ -4,6 +4,15 @@ import type { Metadata } from "next";
 import { FloatingWhatsapp } from "./components/FloatingWhatsapp";
 import { NavBar } from "./components/NavBar";
 import { ProductosGrid } from "./components/ProductosGrid";
+import envasesNoFondo from "./assets/envasesNoFondo.png";
+import logoNoFondo from "./assets/logoNoFondo.png";
+import whatsappIcon from "./assets/whatsapp.svg";
+import p1 from "./assets/productos/1.jpeg";
+import p2 from "./assets/productos/2.jpeg";
+import p3 from "./assets/productos/3.jpeg";
+import p4 from "./assets/productos/4.jpeg";
+import p5 from "./assets/productos/5.jpeg";
+import p6 from "./assets/productos/6.png";
 
 export const metadata: Metadata = {
   title: "EnteK | Envases Plásticos",
@@ -12,12 +21,12 @@ export const metadata: Metadata = {
 
 // Catálogo breve de 6 productos para mostrar en grilla 3x2.
 const productos = [
-  { id: 1, imagen: "/productos/1.jpeg", alt: "Producto 1" },
-  { id: 2, imagen: "/productos/2.jpeg", alt: "Producto 2" },
-  { id: 3, imagen: "/productos/3.jpeg", alt: "Producto 3" },
-  { id: 4, imagen: "/productos/4.jpeg", alt: "Producto 4" },
-  { id: 5, imagen: "/productos/5.jpeg", alt: "Producto 5" },
-  { id: 6, imagen: "/productos/6.png", alt: "Producto 6" },
+  { id: 1, imagen: p1, alt: "Producto 1" },
+  { id: 2, imagen: p2, alt: "Producto 2" },
+  { id: 3, imagen: p3, alt: "Producto 3" },
+  { id: 4, imagen: p4, alt: "Producto 4" },
+  { id: 5, imagen: p5, alt: "Producto 5" },
+  { id: 6, imagen: p6, alt: "Producto 6" },
 ];
 
 
@@ -51,7 +60,7 @@ export default function Home() {
           >
             {/* Barra superior con logo y navegación */}
             <NavBar
-              logoSrc="/logoNoFondo.png"
+              logoSrc={logoNoFondo.src}
               navItems={[
                 { label: "INICIO", href: "#inicio" },
                 { label: "PRODUCTOS", href: "#productos" },
@@ -67,7 +76,7 @@ export default function Home() {
               </h1>
               <div className="relative mt-auto w-full max-w-5xl md:h-115">
                 <Image
-                  src="/envasesNoFondo.png"
+                  src={envasesNoFondo}
                   alt="Envases EnteK"
                   width={1800}
                   height={100}
@@ -148,7 +157,7 @@ export default function Home() {
         <footer className="flex flex-col gap-6 rounded-2xl bg-white p-6 text-slate-700 shadow-sm ring-1 ring-slate-200 md:flex-row md:items-center md:justify-between md:gap-10">
           <div className="flex flex-col items-center gap-4 md:items-start md:pl-12">
             <Image
-              src="/logo.jpeg"
+              src={logoNoFondo}
               alt="EnteK logo"
               width={200}
               height={80}
@@ -171,7 +180,7 @@ export default function Home() {
                 className="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500 text-white shadow-md transition hover:scale-105"
                 aria-label="WhatsApp"
               >
-                <Image src="/whatsapp.svg" alt="WhatsApp" width={22} height={22} />
+                <Image src={whatsappIcon} alt="WhatsApp" width={22} height={22} />
               </a>
               <a
                 href="https://facebook.com"

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import whatsappIcon from "../whatsapp.svg";
+import whatsappIcon from "../assets/whatsapp.svg";
 
 // Botón flotante de WhatsApp que aparece en toda la app.
 const phone = "3332400730";

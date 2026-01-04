@@ -6,7 +6,7 @@ import { useState } from "react";
 
 type Producto = {
   id: number;
-  imagen: string;
+  imagen: StaticImageData;
   alt: string;
 };
 
