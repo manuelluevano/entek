@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
   output: "export",
   // Prefijo/base solo en producción (GitHub Pages). En dev sirve en raíz.
   basePath: isProd ? "/entek" : "",
+  assetPrefix: isProd ? "/entek" : "",
   images: {
     // Necesario al exportar con next/image
     unoptimized: true,

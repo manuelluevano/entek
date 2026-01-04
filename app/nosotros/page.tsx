@@ -1,5 +1,4 @@
 // Página de Nosotros replicando la vista de la maqueta.
-import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { NavBar } from "../components/NavBar";
