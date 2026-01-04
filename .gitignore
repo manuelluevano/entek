@@ -1,0 +1,26 @@
+# Dependencies
+node_modules
+/.pnp
+.pnp.js
+
+# Build outputs
+.next
+out
+dist
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor folders
+.DS_Store
+.idea
+.vscode
+
+# Env
+.env
+.env.local
+.env.production
+.env.development
