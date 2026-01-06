@@ -5,8 +5,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === "production" ? "/entek" : "",
-  assetPrefix: process.env.NODE_ENV === "production" ? "/entek" : "",
+  // Desplegando en un dominio raíz (superenvasesentek.com.mx), sin subcarpeta
+  basePath: "",
+  assetPrefix: "",
 };
 
 module.exports = nextConfig;
