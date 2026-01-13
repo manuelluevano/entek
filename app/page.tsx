@@ -167,7 +167,7 @@ export default function Home() {
             <div className="text-sm text-center md:text-left">
               <p className="font-semibold">Contacto</p>
               <ul className="mt-2 space-y-1 list-disc pl-5">
-                <li>Josvall21988@gmail.com</li>
+                <li>Josval121988@gmail.com</li>
                 <li>Jorgeberumen200@gmail.com</li>
                 <li>Tel: +52 33 3240 0730</li>
               </ul>
@@ -183,7 +183,7 @@ export default function Home() {
                 <Image src={whatsappIcon} alt="WhatsApp" width={22} height={22} />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/people/Super-envases-ENTEK/61586102394507/"
                 target="_blank"
                 rel="noreferrer"
                 className="flex h-12 w-12 items-center justify-center rounded-full bg-[#1877F2] text-white shadow-md transition hover:scale-105"
