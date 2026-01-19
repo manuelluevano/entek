@@ -13,6 +13,15 @@ import p3 from "./assets/productos/3.jpeg";
 import p4 from "./assets/productos/4.jpeg";
 import p5 from "./assets/productos/5.jpeg";
 import p6 from "./assets/productos/6.png";
+import pn1 from "./assets/productos nuevos/1.jpeg";
+import pn2 from "./assets/productos nuevos/2.jpeg";
+import pn3 from "./assets/productos nuevos/3.jpeg";
+import pn4 from "./assets/productos nuevos/4.jpeg";
+import pn5 from "./assets/productos nuevos/5.jpeg";
+import pn6 from "./assets/productos nuevos/6.jpeg";
+import pn7 from "./assets/productos nuevos/7.jpeg";
+import pn8 from "./assets/productos nuevos/8.jpeg";
+import pn10 from "./assets/productos nuevos/10.jpeg";
 
 export const metadata: Metadata = {
   title: "EnteK | Envases Plásticos",
@@ -27,6 +36,18 @@ const productos = [
   { id: 4, imagen: p4, alt: "Producto 4" },
   { id: 5, imagen: p5, alt: "Producto 5" },
   { id: 6, imagen: p6, alt: "Producto 6" },
+];
+
+const productosNuevos = [
+  { id: 1, imagen: pn1, alt: "Producto nuevo 1" },
+  { id: 2, imagen: pn2, alt: "Producto nuevo 2" },
+  { id: 3, imagen: pn3, alt: "Producto nuevo 3" },
+  { id: 4, imagen: pn4, alt: "Producto nuevo 4" },
+  { id: 5, imagen: pn5, alt: "Producto nuevo 5" },
+  { id: 6, imagen: pn6, alt: "Producto nuevo 6" },
+  { id: 7, imagen: pn7, alt: "Producto nuevo 7" },
+  { id: 8, imagen: pn8, alt: "Producto nuevo 8" },
+  { id: 9, imagen: pn10, alt: "Producto nuevo 9" },
 ];
 
 
@@ -96,24 +117,58 @@ export default function Home() {
 
           {/* Productos */}
           <section
-            id="productos"
-            className="mx-12 rounded-2xl bg-white p-5 shadow-sm md:mx-16 md:p-6 lg:mx-24"
+            id="maquilas"
+            className="mx-6 rounded-3xl border border-slate-200/80 bg-white/95 p-5 shadow-[0_18px_40px_-30px_rgba(15,23,42,0.35)] backdrop-blur md:mx-12 md:p-7 lg:mx-24"
           >
-            <div className="flex items-center justify-between border-b border-slate-200 pb-4 text-slate-600">
-              <div className="flex items-center gap-2 text-sm">
-                <span className="rounded-full bg-green-500 px-2 py-0.5 text-xs text-white">
-                  Productos
-                </span>
-                <span>Envases con logotipo o marca del cliente</span>
+            <div className="flex flex-col gap-4 border-b border-slate-200/80 pb-5 text-slate-600 md:flex-row md:items-center md:justify-between">
+              <div className="flex flex-col gap-3">
+                <div className="flex flex-wrap items-center gap-3">
+                  <span className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-700">
+                    Maquilas
+                  </span>
+                </div>
+                <h3 className="text-lg font-semibold text-slate-900 md:text-xl">
+                  Envases con logotipo o marca del cliente
+                </h3>
               </div>
               <a
-                className="text-sm text-sky-700 underline decoration-sky-700/50"
-                href="#contacto"
+                className="inline-flex w-full items-center justify-center rounded-full border border-sky-200 bg-sky-50 px-4 py-2 text-sm font-semibold text-sky-700 transition hover:border-sky-300 hover:bg-sky-100 md:w-auto"
+                href="https://api.whatsapp.com/send/?phone=523332400730&text&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noreferrer"
               >
                 Contáctanos
               </a>
             </div>
             <ProductosGrid productos={productos} />
+          </section>
+
+          {/* Productos */}
+          <section
+            id="productos"
+            className="mx-6 mt-10 rounded-3xl border border-slate-200/80 bg-white/95 p-5 shadow-[0_18px_40px_-30px_rgba(15,23,42,0.35)] backdrop-blur md:mx-12 md:p-7 lg:mx-24"
+          >
+            <div className="flex flex-col gap-4 border-b border-slate-200/80 pb-5 text-slate-600 md:flex-row md:items-center md:justify-between">
+              <div className="flex flex-col gap-3">
+                <div className="flex flex-wrap items-center gap-3">
+                  <span className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-700">
+                    Productos
+                  </span>
+                </div>
+                <h3 className="text-lg font-semibold text-slate-900 md:text-xl">
+                  Productos nuevos
+                </h3>
+              </div>
+              <a
+                className="inline-flex w-full items-center justify-center rounded-full border border-sky-200 bg-sky-50 px-4 py-2 text-sm font-semibold text-sky-700 transition hover:border-sky-300 hover:bg-sky-100 md:w-auto"
+                href="https://api.whatsapp.com/send/?phone=523332400730&text&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Contáctanos
+              </a>
+            </div>
+            <ProductosGrid productos={productosNuevos} />
           </section>
 
           {/* CTA */}
